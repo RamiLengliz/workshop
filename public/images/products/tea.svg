@@ -1,0 +1,17 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="200" cy="200" r="200" fill="#FAF0DC"/>
+  <ellipse cx="200" cy="298" rx="95" ry="13" fill="#C4B882" opacity="0.4"/>
+  <rect x="110" y="215" width="170" height="90" rx="14" fill="#F5EDE0"/>
+  <ellipse cx="195" cy="217" rx="85" ry="20" fill="#EDE0CC"/>
+  <ellipse cx="195" cy="210" rx="75" ry="16" fill="#C8A855" opacity="0.35"/>
+  <ellipse cx="195" cy="208" rx="68" ry="14" fill="#B8942A" opacity="0.25"/>
+  <path d="M280 228 L305 228" stroke="#EDE0CC" stroke-width="16" stroke-linecap="round"/>
+  <circle cx="308" cy="228" r="10" fill="#EDE0CC"/>
+  <rect x="88" y="302" width="214" height="9" rx="4.5" fill="#E0CDB0"/>
+  <line x1="195" y1="178" x2="195" y2="210" stroke="#8a8076" stroke-width="2" stroke-dasharray="4,3"/>
+  <rect x="180" y="168" width="30" height="14" rx="4" fill="#C24A5E" opacity="0.7"/>
+  <text x="195" y="179" text-anchor="middle" font-family="Arial" font-size="8" fill="white">TEA</text>
+  <path d="M175 195 Q195 183 215 190" stroke="#A8C4A2" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <circle cx="178" cy="198" r="4" fill="#A8C4A2" opacity="0.7"/>
+  <circle cx="212" cy="193" r="3" fill="#A8C4A2" opacity="0.6"/>
+</svg>

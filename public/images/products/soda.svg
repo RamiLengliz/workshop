@@ -1,0 +1,15 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="200" cy="200" r="200" fill="#FAF0DC"/>
+  <ellipse cx="200" cy="328" rx="55" ry="10" fill="#C4A882" opacity="0.4"/>
+  <rect x="168" y="145" width="64" height="180" rx="22" fill="#8B1A1A" opacity="0.15"/>
+  <rect x="171" y="148" width="58" height="174" rx="20" fill="none" stroke="#C84040" stroke-width="3"/>
+  <rect x="175" y="152" width="50" height="165" rx="17" fill="#CC2020" opacity="0.45"/>
+  <rect x="175" y="152" width="50" height="50" rx="17" fill="#F5E8E8" opacity="0.5"/>
+  <rect x="185" y="136" width="30" height="16" rx="8" fill="#CC2020"/>
+  <rect x="190" y="128" width="20" height="12" rx="6" fill="#AA1818"/>
+  <circle cx="190" cy="250" r="5" fill="white" opacity="0.4"/>
+  <circle cx="205" cy="268" r="4" fill="white" opacity="0.35"/>
+  <circle cx="195" cy="282" r="3" fill="white" opacity="0.3"/>
+  <circle cx="210" cy="255" r="3" fill="white" opacity="0.35"/>
+  <rect x="196" y="108" width="8" height="32" rx="4" fill="#8a8076" opacity="0.6"/>
+</svg>
