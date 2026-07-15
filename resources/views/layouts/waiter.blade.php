@@ -13,9 +13,15 @@
             <a class="navbar-brand fw-bold" href="{{ route('waiter.tables') }}">
                 <i class="bi bi-cup-hot-fill me-2"></i>Workshop Bistro &middot; Serveur
             </a>
-            <div>
-                <a href="{{ route('waiter.tables') }}" class="btn btn-outline-light btn-sm me-2">Tables</a>
+            <div class="d-flex align-items-center gap-2">
+                <a href="{{ route('waiter.tables') }}" class="btn btn-outline-light btn-sm">Tables</a>
                 <a href="{{ route('waiter.orders.index') }}" class="btn btn-outline-light btn-sm">Commandes</a>
+                <form method="POST" action="{{ route('waiter.logout') }}" class="mb-0">
+                    @csrf
+                    <button type="submit" class="btn btn-sm btn-outline-warning">
+                        <i class="bi bi-box-arrow-right me-1"></i>Déconnexion
+                    </button>
+                </form>
             </div>
         </div>
     </nav>

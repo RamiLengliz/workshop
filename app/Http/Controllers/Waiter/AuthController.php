@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers\Waiter;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
@@ -8,35 +8,29 @@ use Illuminate\Support\Facades\Auth;
 
 class AuthController extends Controller
 {
-    /**
-     * Show the admin login form.
-     */
     public function showLogin()
     {
-        return view('admin.auth.login');
+        return view('waiter.auth.login');
     }
 
-    /**
-     * Handle an admin login attempt.
-     */
     public function login(Request $request)
     {
         $credentials = $request->validate([
-            'email' => 'required|email',
+            'email'    => 'required|email',
             'password' => 'required',
         ]);
 
         if (Auth::attempt($credentials, $request->boolean('remember'))) {
-            if (!Auth::user()->isAdmin()) {
+            if (!Auth::user()->isWaiter()) {
                 Auth::logout();
                 return back()
-                    ->withErrors(['email' => 'Accès réservé aux administrateurs.'])
+                    ->withErrors(['email' => 'Accès réservé aux serveurs.'])
                     ->onlyInput('email');
             }
 
             $request->session()->regenerate();
 
-            return redirect()->intended(route('admin.dashboard'));
+            return redirect()->intended(route('waiter.tables'));
         }
 
         return back()
@@ -44,9 +38,6 @@ class AuthController extends Controller
             ->onlyInput('email');
     }
 
-    /**
-     * Log the admin out.
-     */
     public function logout(Request $request)
     {
         Auth::logout();
@@ -54,6 +45,6 @@ class AuthController extends Controller
         $request->session()->invalidate();
         $request->session()->regenerateToken();
 
-        return redirect()->route('admin.login');
+        return redirect()->route('waiter.login');
     }
 }

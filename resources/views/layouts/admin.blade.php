@@ -57,6 +57,11 @@
                     <i class="bi bi-receipt me-2"></i> Commandes
                 </a>
             </li>
+            <li class="nav-item">
+                <a href="{{ route('admin.waiters.index') }}" class="nav-link {{ request()->routeIs('admin.waiters.*') ? 'active' : '' }}">
+                    <i class="bi bi-people me-2"></i> Serveurs
+                </a>
+            </li>
         </ul>
 
         <hr class="text-secondary">
